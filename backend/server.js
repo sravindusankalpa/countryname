@@ -13,7 +13,7 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors("*"));
 app.use(express.json());
 
 // MongoDB Connection
